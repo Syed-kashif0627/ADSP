@@ -1,6 +1,6 @@
 
 
-def linearSort(l,n):
+def selectionSort(l,n):
     for i in range(n-1):
         for j in range(i+1,n):
             if(l[j]<l[i]):
@@ -16,8 +16,8 @@ for i in range(n):
 print("Original List:")
 print(l)
 
-linearSort(l,n)
+selectionSort(l,n)
 
-print("List After Linear Sort:")
+print("List After selection Sort:")
 
 print(l)
