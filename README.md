@@ -1,1 +1,1 @@
-# ADSP_JNTU
+# ADSP
