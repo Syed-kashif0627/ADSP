@@ -2,18 +2,18 @@ import heapq as hq
 
 class PriorityQueue:
     def __init__(self):
-        self.queue = []
-        self.index = 0
+        self.q = []
+        self.i = 0
 
     def push(self, item, priority):
-        hq.heappush(self.queue, (-priority, self.index, item))
-        self.index += 1
+        hq.heappush(self.q, (-priority, self.i, item))
+        self.i+=1
 
     def pop(self):
-        return hq.heappop(self.queue)[-1]
+        return hq.heappop(self.q)[-1]
 
     def is_empty(self):
-        return len(self.queue) == 0
+        return len(self.q) == 0
 
 
 pq = PriorityQueue()
