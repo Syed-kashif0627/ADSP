@@ -18,28 +18,28 @@ class Queue:
         return len(self.items)
 
 # Function to display list of integers in FIFO order using the Queue class
-def display_fifo(input_list):
+def displayFIFO(list):
     queue = Queue()
-    for item in input_list:
+    for item in list:
         queue.enqueue(item)
     
-    fifo_list = []
+    fifoList = []
     while not queue.isEmpty():
-        fifo_list.append(queue.dequeue())
+        fifoList.append(queue.dequeue())
     
-    return fifo_list
+    return fifoList
 
 
 n = int(input("Enter the size of the list: "))
-input_list = []
+list = []
 for i in range(n):
     elem = int(input(f"Enter the {i+1}th element: "))
-    input_list.append(elem)
+    list.append(elem)
 
 print("Original List:")
-print(input_list)
+print(list)
 
-fifo_list = display_fifo(input_list)
+fifoList = displayFIFO(list)
 
 print("List in FIFO order:")
-print(fifo_list)
+print(fifoList)
