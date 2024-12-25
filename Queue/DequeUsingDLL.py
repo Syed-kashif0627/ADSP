@@ -80,5 +80,5 @@ print("Size of deque:", deque.getSize())
 print("Removed from front:", deque.delFirst())
 print("Removed from rear:", deque.delLast())
 
-# Display the size of the deque
+# Display the size of the  deque
 print("Size of deque:", deque.getSize())
