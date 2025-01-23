@@ -21,10 +21,10 @@ def QuickSort(A,l,h):
         QuickSort(A,l,pos-1)
         QuickSort(A,pos+1,h)
 
-n=int(input("Enter the the number of elements: "))
+n=int(input("Enter the the number of Names: "))
 A=[]
 for i in range(n):
-    elem=int(input(f'Enter the {i+1}th element: '))
+    elem=(input(f'Enter the {i+1}th Name: '))
     A.append(elem)
 
 print("List before Quick sort: ",A)
