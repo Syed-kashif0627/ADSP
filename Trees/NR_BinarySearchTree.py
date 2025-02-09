@@ -42,6 +42,7 @@ class NRBST:
                 curr=curr.ls
             else:
                 curr=curr.rs
+        return None
 
 tree=NRBST()
 
