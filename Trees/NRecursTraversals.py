@@ -36,6 +36,26 @@ class BinaryTree:
                 stack.append(node.right)
             if node.left:
                 stack.append(node.left)
+                
+    def postorder_non_recursive(self):
+        if self.root is None:
+            return
+        stack1 = [self.root]
+        stack2 = []
+        
+        while stack1:
+            node = stack1.pop()
+            stack2.append(node)
+            
+            if node.left:
+                stack1.append(node.left)
+            if node.right:
+                stack1.append(node.right)
+        
+        while stack2:
+            node = stack2.pop()
+            print(node.value, end=' ')
+
 
     def inorder_non_recursive(self):
         stack = []
