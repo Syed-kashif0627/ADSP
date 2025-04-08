@@ -1,0 +1,7 @@
+This is a normal file
+is a normal
+this is a text file
+for testing a prg
+this is normal
+file for
+testing the shell script
